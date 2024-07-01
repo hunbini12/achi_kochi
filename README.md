@@ -38,6 +38,9 @@
 
 **메인페이지**
 
+![메인 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/4367da31-6cfc-47de-8295-cc3848da1b35)
+
 
 **추천 테마여행 페이지**
 
+![추천 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/e93346db-e071-4ca7-b579-9327bf0ce29a)
