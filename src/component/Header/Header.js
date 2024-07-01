@@ -1,6 +1,7 @@
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
 import React from "react";
+import { Link } from "react-router-dom";
 import Search from "./Search";
 import logo from "./logo_img/logo.png";
 
@@ -27,13 +28,13 @@ const Header = () => {
               width: "20%",
             }}
           >
-            <a href="/">
+            <Link to="/">
               <img
                 src={logo}
                 alt="로고"
                 style={{ width: 95, margin: "0 auto" }}
               />
-            </a>
+            </Link>
           </li>
           <li
             style={{
@@ -58,8 +59,8 @@ const Header = () => {
               width: "20%",
             }}
           >
-            <a
-              href="/2"
+            <Link
+              to="/2"
               style={{
                 lineHeight: "100px",
                 padding: "40px 10px",
@@ -68,7 +69,7 @@ const Header = () => {
               className="link"
             >
               추천
-            </a>
+            </Link>
           </li>
           <li
             style={{

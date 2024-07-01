@@ -110,7 +110,7 @@ const NavBar = () => {
   };
   return (
     <div style={{ display: "flex", alignItems: "right" }}>
-      <div style={{ flex: "1", margin: '0 20px' }}>
+      <div style={{ flex: "1", margin: "0 20px" }}>
         <Logo />
       </div>
       <Menu

@@ -6,7 +6,7 @@ function Appako() {
   return (
     <div className="App">
       <div style={{ minHeight: "100vh" }}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/2" element={<Index2 />} />

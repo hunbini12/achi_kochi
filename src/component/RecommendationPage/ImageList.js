@@ -8,6 +8,69 @@ import theme6 from "./theme_img/개.jpg";
 import theme7 from "./theme_img/바다위.webp";
 import theme8 from "./theme_img/캠핑.png";
 
+const themes = [
+  { src: theme1, alt: "가족", label: "가족" },
+  { src: theme2, alt: "친구", label: "친구" },
+  { src: theme3, alt: "연인", label: "연인" },
+  { src: theme4, alt: "나홀로", label: "나홀로" },
+  { src: theme5, alt: "푸드", label: "맛집 투어" },
+  { src: theme6, alt: "펫 투어", label: "펫 투어" },
+  { src: theme7, alt: "바다", label: "바다" },
+  { src: theme8, alt: "산", label: "산" },
+];
+
+const ThemeItem = (
+  { src, alt, label } // 분해할당으로 받음
+) => (
+  <div style={{ width: "240px", position: "relative" }}>
+    <a href="/" style={{ textDecoration: "none" }}>
+      <div
+        style={{
+          position: "relative",
+          display: "block",
+          width: "210px",
+          height: "210px",
+          margin: "0 20px",
+          borderRadius: "50%",
+          overflow: "hidden",
+        }}
+      >
+        <img
+          src={src}
+          alt={alt}
+          style={{
+            position: "absolute",
+            left: "50%",
+            width: "auto",
+            height: "100%",
+            transform: "translate(-50%, 0)",
+            filter: "brightness(0.7)",
+          }}
+        />
+        <em
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "50%",
+            display: "flex",
+            width: "210px",
+            height: "210px",
+            transform: "translate(-50%, 0)",
+            zIndex: "1",
+            fontSize: "24px",
+            color: "#fff",
+            alignItems: "center",
+            justifyContent: "center",
+            fontWeight: "bold",
+          }}
+        >
+          {label}
+        </em>
+      </div>
+    </a>
+  </div>
+);
+
 const ImageList = () => {
   return (
     <>
@@ -17,206 +80,14 @@ const ImageList = () => {
           position: "relative",
           height: "210px",
           marginTop: "50px",
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
         }}
       >
-        <ul
-          style={{
-            position: "relative",
-            listStyle: "none",
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-          }}
-        >
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme1}
-                  alt="가족"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  가족
-                </em>
-              </span>
-            </a>
-          </li>
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme2}
-                  alt="친구"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  친구
-                </em>
-              </span>
-            </a>
-          </li>
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme3}
-                  alt="연인"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  연인
-                </em>
-              </span>
-            </a>
-          </li>
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme4}
-                  alt="나홀로"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  나홀로
-                </em>
-              </span>
-            </a>
-          </li>
-        </ul>
+        {themes.map(
+          (theme, index) => index < 4 && <ThemeItem key={index} {...theme} /> // 테마 1 ~ 4번째, 전개연산자로 속성값 넘겨준다
+        )}
       </div>
       <div
         style={{
@@ -224,206 +95,14 @@ const ImageList = () => {
           position: "relative",
           height: "210px",
           marginTop: "120px",
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
         }}
       >
-        <ul
-          style={{
-            position: "relative",
-            listStyle: "none",
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-          }}
-        >
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme5}
-                  alt="푸드"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  맛집 투어
-                </em>
-              </span>
-            </a>
-          </li>
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme6}
-                  alt="펫 투어"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  펫 투어
-                </em>
-              </span>
-            </a>
-          </li>
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme7}
-                  alt="바다"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  바다
-                </em>
-              </span>
-            </a>
-          </li>
-          <li style={{ float: "left", width: "240px", position: "relative" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span
-                style={{
-                  position: "relative",
-                  display: "block",
-                  width: "210px",
-                  height: "210px",
-                  margin: "0 20px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={theme8}
-                  alt="산"
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    width: "auto",
-                    height: "100%",
-                    transform: "translate(-50%, 0)",
-                    filter: "brightness(0.7)",
-                  }}
-                />
-                <em
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    left: "50%",
-                    display: "flex",
-                    width: "210px",
-                    height: "210px",
-                    transform: "translate(-50%, 0)",
-                    zIndex: "1",
-                    fontSize: "24px",
-                    color: "#fff",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "bold",
-                  }}
-                >
-                  산
-                </em>
-              </span>
-            </a>
-          </li>
-        </ul>
+        {themes.map(
+          (theme, index) => index >= 4 && <ThemeItem key={index} {...theme} /> // 테마 5 ~ 8번째
+        )}
       </div>
     </>
   );
