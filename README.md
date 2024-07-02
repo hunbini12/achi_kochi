@@ -1,4 +1,4 @@
-# 여기 저기
+# 여기 저기(achi kochi)
 
 
 
@@ -42,6 +42,10 @@
 |**OS**|Windows 7|
 |**IDE**|VSCODE|
 |**Front-end**|CSS, Antdisig|
+
+# ERD
+
+![여기저기 erd](https://github.com/hunbini12/achi_kochi/assets/137461781/124fd0e0-df4a-4c14-9f3c-92689ac51a3d)
 
 # 주요 기능
 
