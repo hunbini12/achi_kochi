@@ -42,8 +42,8 @@ const Header = () => {
               width: "20%",
             }}
           >
-            <a
-              href="/"
+            <Link
+              to="/"
               style={{
                 lineHeight: "100px",
                 padding: "40px 10px",
@@ -51,7 +51,7 @@ const Header = () => {
               }}
             >
               지 역
-            </a>
+            </Link>
           </li>
           <li
             style={{
@@ -77,8 +77,8 @@ const Header = () => {
               width: "20%",
             }}
           >
-            <a
-              href="/"
+            <Link
+              to="/"
               style={{
                 lineHeight: "100px",
                 padding: "40px auto",
@@ -86,7 +86,7 @@ const Header = () => {
               }}
             >
               문 의
-            </a>
+            </Link>
           </li>
           <li
             style={{

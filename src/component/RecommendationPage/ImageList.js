@@ -7,6 +7,7 @@ import theme5 from "./theme_img/푸드.jpg";
 import theme6 from "./theme_img/개.jpg";
 import theme7 from "./theme_img/바다위.webp";
 import theme8 from "./theme_img/캠핑.png";
+import { Link } from "react-router-dom";
 
 const themes = [
   { src: theme1, alt: "가족", label: "가족" },
@@ -23,7 +24,7 @@ const ThemeItem = (
   { src, alt, label } // 분해할당으로 받음
 ) => (
   <div style={{ width: "240px", position: "relative" }}>
-    <a href="/" style={{ textDecoration: "none" }}>
+    <Link to="/" style={{ textDecoration: "none" }}>
       <div
         style={{
           position: "relative",
@@ -67,7 +68,7 @@ const ThemeItem = (
           {label}
         </em>
       </div>
-    </a>
+    </Link>
   </div>
 );
 
@@ -76,7 +77,7 @@ const ImageList = () => {
     <>
       <div
         style={{
-          width: "100%",
+          width: "80%",
           position: "relative",
           height: "210px",
           marginTop: "50px",
@@ -91,7 +92,7 @@ const ImageList = () => {
       </div>
       <div
         style={{
-          width: "100%",
+          width: "80%",
           position: "relative",
           height: "210px",
           marginTop: "120px",

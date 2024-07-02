@@ -2,6 +2,7 @@ import React from "react";
 import main_img1 from "./main_img/날씨.jpg";
 import main_img2 from "./main_img/준비물.png";
 import main_img3 from "./main_img/축제1.jpg";
+import { Link } from "react-router-dom";
 
 const images = [
   { src: main_img1, alt: "날씨 / 후기", label: "날씨/후기" },
@@ -11,7 +12,7 @@ const images = [
 
 const ImageItem = ({ src, alt, label }) => (
   <div style={{ width: "450px", position: "relative" }}>
-    <a href="/" style={{ textDecoration: "none" }}>
+    <Link to="/" style={{ textDecoration: "none" }}>
       <div
         style={{
           position: "relative",
@@ -46,7 +47,7 @@ const ImageItem = ({ src, alt, label }) => (
           {label}
         </em>
       </div>
-    </a>
+    </Link>
   </div>
 );
 

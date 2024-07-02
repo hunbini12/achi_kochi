@@ -6,6 +6,7 @@ import a1 from "./main_img/봄.jpg";
 import t1 from "./main_img/여행지1.jpeg";
 import t2 from "./main_img/여행지2.jpg";
 import t3 from "./main_img/여행지3.jpg";
+import { Link } from "react-router-dom";
 
 const images = [
   { src: t1, alt: "여행 지역", label: "여행 지역" },
@@ -21,7 +22,7 @@ const carouselImages = [
 
 const ImageItem = ({ src, alt, label }) => (
   <div style={{ width: "450px", position: "relative" }}>
-    <a href="/" style={{ textDecoration: "none" }}>
+    <Link to="/2" style={{ textDecoration: "none" }}>
       <div
         style={{
           position: "relative",
@@ -54,13 +55,13 @@ const ImageItem = ({ src, alt, label }) => (
           {label}
         </em>
       </div>
-    </a>
+    </Link>
   </div>
 );
 
 const CarouselItem = ({ src, alt, label }) => (
   <div>
-    <a href="/" style={{ textDecoration: "none" }}>
+    <Link to="/2" style={{ textDecoration: "none" }}>
       <div
         style={{
           position: "relative",
@@ -93,7 +94,7 @@ const CarouselItem = ({ src, alt, label }) => (
           {label}
         </em>
       </div>
-    </a>
+    </Link>
   </div>
 );
 
