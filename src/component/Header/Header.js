@@ -2,6 +2,7 @@ import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./";
 import Search from "./Search";
 import logo from "./logo_img/logo.png";
 
@@ -37,10 +38,12 @@ const Header = () => {
             </Link>
           </li>
           <li
-            style={{
-              borderRight: "1px solid #505050",
-              width: "20%",
-            }}
+            style={
+              {
+                // borderRight: "1px solid #505050",
+                // width: "20%",
+              }
+            }
           >
             <Link
               to="/"
@@ -48,6 +51,7 @@ const Header = () => {
                 lineHeight: "100px",
                 padding: "40px 10px",
                 textDecoration: "none",
+                color: "#434343",
               }}
             >
               지 역
@@ -65,6 +69,7 @@ const Header = () => {
                 lineHeight: "100px",
                 padding: "40px 10px",
                 textDecoration: "none",
+                color: "#434343",
               }}
               className="link"
             >
@@ -83,6 +88,7 @@ const Header = () => {
                 lineHeight: "100px",
                 padding: "40px auto",
                 textDecoration: "none",
+                color: "#434343",
               }}
             >
               문 의
