@@ -1,13 +1,7 @@
 # 여기 저기
 
 
-
-
-
 **주제 : 여행 정보 사이트**
-
-
-
 
 
 # 프로젝트 소개
@@ -33,6 +27,26 @@
 - 여행지 후기 관리 : 여행자, 현지인의 여행지의 후기와 정보업데이트 요청
 - 여행지 데이터베이스 : 다양한 여행지와 정보에 대한 데이터베이스 구축
 
+# 개발 인원
+- 총 1명 : 김현빈
+- 기여도 : 100%
+
+
+# 개발 기간
+2024-06-27 ~ 2024-07-03
+
+# 개발 환경
+
+|구분|내용|
+|------|---|
+|**OS**|Windows 7|
+|**IDE**|VSCODE|
+|**Front-end**|CSS <br> JavaScript <br> react 18.3.1 <br>|
+|**라이브러리**|Antdisign 5.18.3 <br> axios 1.7.2 |
+
+# ERD
+
+![여기저기 erd](https://github.com/hunbini12/achi_kochi/assets/137461781/124fd0e0-df4a-4c14-9f3c-92689ac51a3d)
 
 # 주요 기능
 
@@ -43,4 +57,4 @@
 
 **추천 테마여행 페이지**
 
-![추천 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/e93346db-e071-4ca7-b579-9327bf0ce29a)
+![추천 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/b9b61656-bde2-437b-9325-7810fa76de12)
