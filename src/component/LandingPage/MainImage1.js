@@ -1,12 +1,22 @@
 import { Carousel } from "antd";
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import a2 from "./main_img/가을.jpg";
 import a3 from "./main_img/겨울.jpg";
 import a1 from "./main_img/봄.jpg";
 import t1 from "./main_img/여행지1.jpeg";
 import t2 from "./main_img/여행지2.jpg";
 import t3 from "./main_img/여행지3.jpg";
-import { Link } from "react-router-dom";
+
+// const [hover, sethover] = useState(-1);
+
+// const handleMouseEnter = (num) => {
+//   sethover(num);
+// };
+
+// const handleMouseLeave = () => {
+//   sethover(-1);
+// };
 
 const images = [
   { src: t1, alt: "여행 지역", label: "여행 지역" },

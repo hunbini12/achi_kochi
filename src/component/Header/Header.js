@@ -1,12 +1,21 @@
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./";
 import Search from "./Search";
 import logo from "./logo_img/logo.png";
 
 const Header = () => {
+  const [hover, sethover] = useState(-1);
+
+  const handleMouseEnter = (num) => {
+    sethover(num);
+  };
+
+  const handleMouseLeave = () => {
+    sethover(-1);
+  };
+
   return (
     <header style={{ left: "0", top: "0", width: "100%", height: "130px" }}>
       <nav style={{ borderBottom: "1px solid #505050", margin: "0 20px" }}>
@@ -38,12 +47,13 @@ const Header = () => {
             </Link>
           </li>
           <li
-            style={
-              {
-                // borderRight: "1px solid #505050",
-                // width: "20%",
-              }
-            }
+            style={{
+              borderRight: "1px solid #505050",
+              width: "20%",
+              backgroundColor: hover === 1 ? "#F5F5F5" : "white",
+            }}
+            onMouseEnter={() => handleMouseEnter(1)}
+            onMouseLeave={handleMouseLeave}
           >
             <Link
               to="/"
@@ -61,7 +71,10 @@ const Header = () => {
             style={{
               borderRight: "1px solid #505050",
               width: "20%",
+              backgroundColor: hover === 2 ? "#F5F5F5" : "white",
             }}
+            onMouseEnter={() => handleMouseEnter(2)}
+            onMouseLeave={handleMouseLeave}
           >
             <Link
               to="/2"
@@ -80,13 +93,16 @@ const Header = () => {
             style={{
               borderRight: "1px solid #505050",
               width: "20%",
+              backgroundColor: hover === 3 ? "#F5F5F5" : "white",
             }}
+            onMouseEnter={() => handleMouseEnter(3)}
+            onMouseLeave={handleMouseLeave}
           >
             <Link
               to="/"
               style={{
                 lineHeight: "100px",
-                padding: "40px auto",
+                padding: "40px 10px",
                 textDecoration: "none",
                 color: "#434343",
               }}
@@ -101,14 +117,18 @@ const Header = () => {
             }}
           >
             <Search />
-            <Avatar
-              size={55}
-              style={{
-                backgroundColor: "#87d068",
-                marginLeft: "50px",
-              }}
-              icon={<UserOutlined />}
-            />
+            <Link to="/2">
+              <Avatar
+                size={55}
+                style={{
+                  backgroundColor: hover === 4 ? "#87d068" : "#434343",
+                  marginLeft: "50px",
+                }}
+                onMouseEnter={() => handleMouseEnter(4)}
+                onMouseLeave={handleMouseLeave}
+                icon={<UserOutlined />}
+              />
+            </Link>
           </li>
         </ul>
       </nav>
