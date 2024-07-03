@@ -41,7 +41,8 @@
 |------|---|
 |**OS**|Windows 7|
 |**IDE**|VSCODE|
-|**Front-end**|CSS <br> JavaScript <br> Antdisign 5.18.3 <br> react 18.3.1 <br>  axios 1.7.2|
+|**Front-end**|CSS <br> JavaScript <br> react 18.3.1 <br>|
+|**라이브러리**|Antdisign 5.18.3 <br> axios 1.7.2 |
 
 # ERD
 
