@@ -57,4 +57,4 @@
 
 **추천 테마여행 페이지**
 
-![추천 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/e93346db-e071-4ca7-b579-9327bf0ce29a)
+![추천 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/b9b61656-bde2-437b-9325-7810fa76de12)
