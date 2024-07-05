@@ -52,9 +52,11 @@
 
 **메인페이지**
 
-![메인 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/4367da31-6cfc-47de-8295-cc3848da1b35)
+![메인 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/b907554b-e2a9-4a9f-82fd-bd178cc0317e)
+
+
 
 
 **추천 테마여행 페이지**
 
-![추천 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/b9b61656-bde2-437b-9325-7810fa76de12)
+![추천 캡쳐](https://github.com/hunbini12/achi_kochi/assets/137461781/ee604ff2-d1e4-4fde-8d6d-3e0bef8c38a5)
